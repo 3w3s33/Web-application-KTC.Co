@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Page - Karachi Trading Co</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="map.js" type="text/babel"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background-image: url('background image for login page .jpg');
+            background-size: cover;
+            background-position: center;
+            color: #f0f0f0; /* Light color for text */
+        }
+        h1 {
+            margin: 0; 
+            font-size: 2.5em; 
+            text-align: center;
+        }
+        #map {
+            width: 600px;
+            height: 450px;
+            margin-top: 20px;
+            border: 0;
+        }
+        .license {
+            padding: 10px;
+            text-align: center;
+            color: #f0f0f0; /* Light color for text */
+            font-size: 14px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.8); 
+            border-top: 1px solid #555; 
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is where you can find us</h1>
+    <div id="root"></div>
+    <div class="license">Karachi Trading Co. since 2024</div>
+</body>
+</html>

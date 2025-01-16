@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karachi Trading Co</title>
+    <!-- React and ReactDOM via CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- Babel to transpile JSX code in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Link to the React code -->
+    <script src="Inventory.js" type="text/babel"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('background image for login page .jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        height: 100vh; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-family: Arial, sans-serif; 
+        color: #f0f0f0; /* Light color for text */
+        flex-direction: column; /* Align items vertically */
+    }
+
+    h1, h3, label, span, button {
+        color: #f0f0f0; /* Light color for text */
+    }
+
+    button {
+        background-color: #444; /* Dark background for buttons */
+        border: none;
+        color: #f0f0f0; /* Light color for text */
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #555; /* Slightly lighter on hover */
+    }
+
+    #root {
+        text-align: center; /* Center the content */
+    }
+
+    .inventory-container {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .license {
+        padding: 10px;
+        text-align: center;
+        color: #f0f0f0; /* Light color for text */
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+        border-top: 1px solid #555; /* Top border for separation */
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+<body>
+    <!-- Root element where React will render -->
+    <div id="root" class="inventory-container"></div>
+    <div class="license">Karachi Trading Co. since 2024</div>
+</body>
+</html>

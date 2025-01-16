@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karachi Trading Co - Purchase</title>
+    <!-- React and ReactDOM via CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="purchase.js" type="text/babel"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: flex-start; 
+            align-items: center; 
+            background-image: url('background image for login page .jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+            font-family: Arial, sans-serif; 
+            overflow-y: auto; 
+        }
+
+        .menu {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            z-index: 100; 
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        .product-list {
+            margin-top: 60px; /* Adjust for fixed menu */
+            width: 80%;
+            max-width: 800px;
+            padding-bottom: 60px; /* Adjust for fixed footer */
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .product-name {
+            font-size: 1.2em;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+        }
+
+        .product i {
+            font-size: 1.5em; 
+            margin-right: 15px; 
+        }
+
+        button {
+            margin-top: 20px; 
+            padding: 10px 20px; 
+            font-size: 1em; 
+            cursor: pointer; 
+            font-style: italic;
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+        }
+
+        button:hover {
+            background-color: #45a049; 
+        }
+
+        .highlight {
+            background-color: #4CAF50; 
+            color: white; 
+        }
+
+        .license {
+            padding: 10px;
+            text-align: center;
+            color: #f0f0f0; /* Light color for text */
+            font-size: 14px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+            border-top: 1px solid #555; /* Top border for separation */
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 100; /* Ensure it is above other elements */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="purchase.html">Purchase</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="review.html">Review</a>
+        <a href="map.html">Map</a>
+    </div>
+
+    <div class="product-list" id="root"></div>
+    <div class="license">Karachi Trading Co. since 2024</div>
+</body>
+</html>

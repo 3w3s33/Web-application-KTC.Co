@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karachi Trading Co</title>
+    <!-- React and ReactDOM via CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- Babel to transpile JSX code in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Link to the React code -->
+    <script src="login.js" type="text/babel"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background image for login page .jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-family: Arial, sans-serif; 
+        }
+
+        #root {
+            background-color: rgba(0, 0, 0, 0.7); 
+            border-radius: 10px; /* Rounded corners */
+            padding: 40px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+            color: white; 
+            width: 300px; 
+            text-align: center; 
+        }
+
+        input {
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+            border: none; 
+            border-radius: 5px; /* Rounded corners for inputs */
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px; /* Rounded corners for button */
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .license {
+            padding: 10px;
+            text-align: center;
+            color: #f0f0f0; /* Light color for text */
+            font-size: 14px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+            border-top: 1px solid #555; /* Top border for separation */
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Root element where React will render -->
+    <div id="root"></div>
+    <div class="license">Karachi Trading Co. since 2024</div>
+</body>
+</html>
